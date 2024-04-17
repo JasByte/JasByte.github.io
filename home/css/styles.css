@@ -1,0 +1,85 @@
+.page-icon {
+  color: #5CDB95;
+}
+
+html {
+  background-color: #1B1E23;
+  color: #DFDFDF;
+  font-family: sans-serif;
+}
+html p, html li {
+  font-size: 1.2em;
+}
+html header {
+  display: flex;
+  align-items: stretch;
+  height: 5em;
+  margin-inline: 2em;
+}
+html header * {
+  flex-grow: 1;
+}
+html header h2 {
+  font-size: 2em;
+  color: #5CDB95;
+}
+html header .nav-bar {
+  max-width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  font-weight: bold;
+}
+html header .nav-bar span {
+  color: #FB472E;
+}
+html header .nav-bar li {
+  text-align: center;
+}
+html header .nav-bar li:hover {
+  transform: scale(1.1);
+}
+html .content {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+}
+html .content > div:first-child {
+  flex: 7;
+}
+html .content > div {
+  flex: 10;
+  display: block;
+  margin: auto;
+}
+html .content > div .social-icons {
+  display: flex;
+  -moz-column-gap: 1.8em;
+       column-gap: 1.8em;
+  width: 100%;
+}
+html .content > div .social-icons i {
+  color: #8D8E91;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+html .content h1 {
+  font-size: 3em;
+}
+html .content img {
+  display: block;
+  max-height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  filter: grayscale(0.5);
+}
+
+.green {
+  color: #5CDB95;
+}
+
+.red {
+  color: #FB472E;
+}/*# sourceMappingURL=styles.css.map */

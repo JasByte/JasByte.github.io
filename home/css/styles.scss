@@ -1,0 +1,109 @@
+$background-color: #1B1E23;
+$green-color: #5CDB95;
+$red-color: #FB472E;
+$text-color: #DFDFDF;
+$icon-color: #8D8E91;
+
+.page-icon {
+    color: $green-color;
+}
+
+html {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: sans-serif;
+
+    
+
+    p, li {
+        font-size: 1.2em;
+    }
+
+    header {
+        display: flex;
+        align-items: stretch;
+        height: 5em;
+        margin-inline: 2em;
+        
+        * {
+            flex-grow: 1;
+        }
+    
+        h2 {
+            font-size: 2em;
+            color: $green-color;
+        }
+    
+        .nav-bar {
+            max-width: 40vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            font-weight: bold;
+    
+            span {
+                color: $red-color;
+            }
+            
+            li {
+                text-align: center;
+            }
+
+            li:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        height: 80vh;
+
+        > div:first-child {
+            flex: 7;
+        }
+
+        > div {
+            flex: 10;
+            display: block;
+            margin: auto;
+            // border: 1px solid;
+            // display: flex;
+            // align-items: center;
+
+            .social-icons {
+                display: flex;
+                column-gap: 1.8em;
+                width: 100%;
+
+                i {
+                    color: $icon-color;
+                    border-radius: 50%;
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        img {
+            display: block;
+            max-height: 50vh;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            filter: grayscale(0.5);
+        }
+    }
+}
+.green {
+    color: $green-color;
+}
+
+.red {
+    color: $red-color;
+}
